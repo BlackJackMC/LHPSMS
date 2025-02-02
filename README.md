@@ -1,9 +1,12 @@
 # LHPSMS
 
+
+## File system
+```
 .
 ├── css/
-│   ├── common.css: Common css file for header, footer,...
 │   ├── about.css
+│   ├── common.css: Common css file for header, footer,...
 │   ├── dashboard.css
 │   ├── details.css
 │   ├── edit.css
@@ -15,3 +18,4 @@
 ├── edit.html
 ├── index.html
 └── login.html
+```
