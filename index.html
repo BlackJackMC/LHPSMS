@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/public/images/favico.png" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
     <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/common.css">
     <link rel="stylesheet" href="/css/index.css">
@@ -14,16 +15,12 @@
 
 <body>
     <header>
-        <button id="menu--mobile">
-            <span class="material-symbols-outlined">
-                menu
-            </span>
-        </button>
-        <a id="logo--mobile" href="index.html">
-            <img src="/public/images/favico.png" />
-            <span> LHPSMS </span>
-        </a>
         <nav>
+            <button id="menu--mobile">
+                <span class="material-symbols-outlined">
+                    menu
+                </span>
+            </button>
             <ul>
                 <li>
                     <a id="logo" href="index.html">
@@ -34,20 +31,23 @@
                 <li><a href="about.html">About us</a></li>
                 <li><a href="dashboard.html">Dashboard</a></li>
             </ul>
-        </nav>
-        <div id="theme">
-            <button id="theme-switch" class="mdc-switch mdc-switch--unselected" type="button" role="switch" aria-checked="false">
-                <div class="mdc-switch__track"></div>
-                <div class="mdc-switch__handle-track">
-                  <div class="mdc-switch__handle">
-                    <div class="mdc-switch__shadow">
-                      <div class="mdc-elevation-overlay"></div>
+            <a id="logo--mobile" href="index.html">
+                <img src="/public/images/favico.png" />
+            </a>
+            <div id="theme">
+                <button id="theme-switch" class="mdc-switch mdc-switch--unselected" type="button" role="switch" aria-checked="false">
+                    <div class="mdc-switch__track"></div>
+                    <div class="mdc-switch__handle-track">
+                        <div class="mdc-switch__handle">
+                            <div class="mdc-switch__shadow">
+                                <div class="mdc-elevation-overlay"></div>
+                            </div>
+                            <div class="mdc-switch__ripple"></div>
+                        </div>
                     </div>
-                    <div class="mdc-switch__ripple"></div>
-                  </div>
-                </div>
-              </button>            
-        </div>
+                </button>
+            </div>
+        </nav>
     </header>
     <main>
         <section id="hero">
