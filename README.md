@@ -4,6 +4,8 @@
 ## File system
 ```
 .
+├── public/
+│   └── images/: Upload web images here
 ├── css/
 │   ├── about.css
 │   ├── common.css: Common css file for header, footer,...
