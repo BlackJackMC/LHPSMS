@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/public/images/favico.png" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/common.css">
     <link rel="stylesheet" href="/css/index.css">
     <title>LHPSMS</title>
@@ -13,25 +14,40 @@
 
 <body>
     <header>
-        <button id="menu">
+        <button id="menu--mobile">
             <span class="material-symbols-outlined">
                 menu
             </span>
         </button>
+        <a id="logo--mobile" href="index.html">
+            <img src="/public/images/favico.png" />
+            <span> LHPSMS </span>
+        </a>
         <nav>
-            <a id="logo" href="index.html">
-                <img src="/public/images/favico.png" />
-                <span> LHPSMS </span>
-            </a>
-            <ul id="navlist">
+            <ul>
+                <li>
+                    <a id="logo" href="index.html">
+                        <img src="/public/images/favico.png" />
+                        <span> LHPSMS </span>
+                    </a>
+                </li>
                 <li><a href="about.html">About us</a></li>
                 <li><a href="dashboard.html">Dashboard</a></li>
             </ul>
         </nav>
-        <label class="switch" id="theme-switch">
-            <input type="checkbox" />
-            <span class="slider"></span>
-        </label>
+        <div id="theme">
+            <button id="theme-switch" class="mdc-switch mdc-switch--unselected" type="button" role="switch" aria-checked="false">
+                <div class="mdc-switch__track"></div>
+                <div class="mdc-switch__handle-track">
+                  <div class="mdc-switch__handle">
+                    <div class="mdc-switch__shadow">
+                      <div class="mdc-elevation-overlay"></div>
+                    </div>
+                    <div class="mdc-switch__ripple"></div>
+                  </div>
+                </div>
+              </button>            
+        </div>
     </header>
     <main>
         <section id="hero">
@@ -48,6 +64,8 @@
     <footer>
         <p>&#169; 2024 LHP High School for the Gifted. All rights reserved.</p>
     </footer>
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <script src="/js/common.js" defer></script>
 </body>
 
 </html>
