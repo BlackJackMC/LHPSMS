@@ -145,7 +145,7 @@ nav ul li {
         display: block;
         height: 10rem;
         padding-block: 5rem 1rem;
-        background-color: #4D4D4D;
+        background-color: var(--mdc-theme-primary);
     }
 
     #account--mobile a {
