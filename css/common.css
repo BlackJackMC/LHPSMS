@@ -1,0 +1,207 @@
+:root {
+    --mdc-theme-primary: #fff;
+    --mdc-switch-selected-hover-handle-color: var(--mdc-theme-primary);
+    --mdc-switch-selected-hover-track-color: var(--mdc-theme-primary);
+    --mdc-switch-selected-focus-track-color: var(--mdc-theme-primary);
+    --mdc-switch-selected-pressed-track-color: var(--mdc-theme-primary);
+    --mdc-switch-selected-track-color: var(--mdc-theme-primary);
+    --mdc-switch-selected-focus-handle-color: var(--mdc-theme-primary);
+    --mdc-switch-selected-pressed-handle-color: var(--mdc-theme-primary);
+    --mdc-switch-selected-hover-state-layer-color: var(--mdc-theme-primary);
+    --mdc-switch-selected-focus-state-layer-color: var(--mdc-theme-primary);
+}
+* {
+    box-sizing: border-box;
+    font-family: "Patrick Hand", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    height: 100%;
+    max-height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+.mdc-switch .mdc-switch__track, .mdc-switch .mdc-switch__handle::after {
+    border: 1px solid black;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 4rem;
+    padding: 0.5rem 1rem;
+    background-color: #B8B6B6;
+    box-shadow: 0px 4px 8px 7px rgba(0,0,0,0.69);
+    -webkit-box-shadow: 0px 4px 8px 7px rgba(0,0,0,0.69);
+    -moz-box-shadow: 0px 4px 8px 7px rgba(0,0,0,0.69);
+    position: sticky;
+}
+
+ul {
+    list-style-type: none;
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+}
+
+nav img{
+    height: 100%;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    gap: 1rem;
+}
+
+nav a:hover {
+    color: white;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+}
+
+.mobile {
+    display: none;
+}
+
+#hamburger--button {
+    background: none;
+    outline: 0;
+    border: 0;
+}
+
+#hamburger--button:hover {
+    cursor: pointer;
+}
+
+.logo--avatar, .account--avatar {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+
+/* Less than or equal */
+@media (max-width: 599px) {
+    #menu--mobile {
+        position: relative;
+        z-index: 3;
+        display: flex;
+
+    }
+
+    #menu--mobile.active span {
+        color: white;
+    }
+
+    #overlay.active {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        outline: solid red;
+    }
+
+    #sitenav {
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        background-color: lightgray;
+        width: 80%;
+        height: 100dvh;
+        display: block;
+        transition: .3s ease;
+    }
+
+    #sitenav.active {
+        transform: translateX(0);
+        box-shadow: 0 0 6px 200px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 0 0 6px 200px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0 0 6px 200px rgba(0, 0, 0, 0.75);
+    }
+
+    #sitenav a {
+        width: 100%;
+        padding-inline-start: 1rem;
+    }
+
+    #sitenav a:not(#account--mobile) {
+        padding-block: 1rem;
+    }
+
+    #sitenav a:hover {
+        box-shadow: 0 0 6px 200px rgba(0, 0, 0, .25) inset;
+        -webkit-box-shadow: 0 0 6px 200px rgba(0, 0, 0, .25) inset;
+        -moz-box-shadow: 0 0 6px 200px rgba(0, 0, 0, .25) inset;
+    }
+
+    #account--mobile {
+        display: block;
+        height: 10rem;
+        padding-block: 5rem 1rem;
+        background-color: #4D4D4D;
+    }
+
+    #account--mobile a {
+        color: white;
+        text-transform: uppercase;
+        font-size: 2rem;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .logo.mobile {
+        display: flex !important;
+    }
+
+    #theme {
+        display: none;
+    }
+}
+@media (max-width: 839px) {}
+@media (max-width: 1279px) {}
+@media (max-width: 1919px) {
+}
+
+/* More than or equal */
+@media (min-width: 0px) {}
+@media (min-width: 600px) {}
+@media (min-width: 960px) {}
+@media (min-width: 1280px) {}
+
+
+/* In range */
+@media (max-width: 600px) {}
+@media (min-width: 599px) and (max-width: 840px) {}
+@media (min-width: 839px) and (max-width: 1280px) {}
+@media (min-width: 1279px) and (max-width: 1920px) {}
