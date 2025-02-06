@@ -21,3 +21,6 @@
 ├── index.html
 └── login.html
 ```
+
+## Random note
+The `header` and the `footer` of the page is filled in using JS. This is for a smooth developing experience only and often is a bad practice on real-world products.

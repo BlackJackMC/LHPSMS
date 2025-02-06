@@ -67,15 +67,16 @@ h1{
     text-align: center;
     font-weight: 500;
 }
+/* Login option separator styling */
 .login_form .separator {
     position: relative;
+    isolation: isolate;
 }
-/* Login option separator styling */
-.login_form .separator span {
+.login_form .separator div {
     background: #fff;
-    z-index: 1;
     padding: 0 10px;
-    position: relative;
+    width: fit-content;
+    margin: auto;
 }
 .login_form .separator::after {
     content: '';
@@ -86,6 +87,7 @@ h1{
     height: 1px;
     background: #C2C2C2;
     display: block;
+    z-index: -1;
 }
 form .input_box label {
     display: block;
@@ -117,9 +119,7 @@ form .input_box .password_title{
     justify-content: space-between;
     text-align: center;
 }
-form .input_box {
-    position: relative;
-}
+
 a {
     text-decoration: none;
     color: black;
