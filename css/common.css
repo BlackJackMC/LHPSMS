@@ -9,7 +9,17 @@
     --mdc-switch-selected-pressed-handle-color: var(--mdc-theme-primary);
     --mdc-switch-selected-hover-state-layer-color: var(--mdc-theme-primary);
     --mdc-switch-selected-focus-state-layer-color: var(--mdc-theme-primary);
+    --font-size-h1: 4.21em;
+    --font-size-h2: 3.16em;
+    --font-size-h3: 2.37em;
+    --font-size-h4: 1.78em;
+    --font-size-h5: 1.33em;
+    --font-size-body: 1em;
+    --font-size-caption: 0.75em;
+    --font-size-small: 0.56em;
+    --header-height: 4rem;
 }
+
 * {
     box-sizing: border-box;
     font-family: "Patrick Hand", serif;
@@ -17,9 +27,16 @@
     font-style: normal;
 }
 
+h1 { font-size: var(--font-size-h1); }
+h2 { font-size: var(--font-size-h2); }
+h3 { font-size: var(--font-size-h3); }
+h4 { font-size: var(--font-size-h4); }
+h5 { font-size: var(--font-size-h5); }
+
 body {
     margin: 0;
     padding: 0;
+    font-size: var(--font-size-body);
 }
 
 img {
@@ -47,12 +64,10 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 4rem;
+    height: var(--header-height);
     padding: 0.5rem 1rem;
     background-color: #B8B6B6;
     box-shadow: 0px 4px 8px 7px rgba(0,0,0,0.69);
-    -webkit-box-shadow: 0px 4px 8px 7px rgba(0,0,0,0.69);
-    -moz-box-shadow: 0px 4px 8px 7px rgba(0,0,0,0.69);
     position: sticky;
     top: 0;
     left: 0;
@@ -93,6 +108,10 @@ nav a:hover {
 nav ul li {
     display: flex;
     align-items: center;
+}
+
+footer {
+    text-align: center;
 }
 
 .mobile {
@@ -166,8 +185,6 @@ nav ul li {
 
     #menu-content.active #sitenav {
         box-shadow: 0 0 6px 200rem rgba(0, 0, 0, 0.75);
-        -webkit-box-shadow: 0 0 6px 200rem rgba(0, 0, 0, 0.75);
-        -moz-box-shadow: 0 0 6px 200rem rgba(0, 0, 0, 0.75);
     }
 
     #sitenav a {
@@ -181,8 +198,6 @@ nav ul li {
 
     #sitenav a:hover {
         box-shadow: 0 0 6px 200px rgba(0, 0, 0, .25) inset;
-        -webkit-box-shadow: 0 0 6px 200px rgba(0, 0, 0, .25) inset;
-        -moz-box-shadow: 0 0 6px 200px rgba(0, 0, 0, .25) inset;
     }
 
     #account--mobile {

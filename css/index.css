@@ -1,0 +1,42 @@
+#hero {
+    height: 100dvh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: var(--header-height);
+}
+
+#hero h1 {
+    margin-bottom: 0.5rem;
+}
+
+#hero h2 {
+    color: #5b5a5a;
+}
+
+#CTA a {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    margin-inline: 0.5rem;
+    transition: all .3s ease;
+}
+
+#CTA a:nth-child(2) {
+    background-color: #2C2C2C;
+    color: white;
+}
+
+#CTA a:hover {
+    box-shadow: 0px 8px 10px 3px rgba(0, 0, 0, 0.75);
+}
+
+#parallax {
+    height: 25rem;
+    background-image: url("../public/images/parllax.webp");
+    background-position: top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
