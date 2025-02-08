@@ -5,6 +5,7 @@
     flex-direction: column;
     align-items: center;
     padding-top: var(--header-height);
+    text-align: center;
 }
 
 #hero h1 {

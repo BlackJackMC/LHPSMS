@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                 <span> Super Admin </span>
                             </a>
                         </li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About us</a></li>
                         <li><a href="dashboard.html">Dashboard</a></li>
                     </ul>
