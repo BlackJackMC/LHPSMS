@@ -37,6 +37,14 @@ body {
     margin: 0;
     padding: 0;
     font-size: var(--font-size-body);
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+}
+
+nav, ul {
+    margin: 0;
+    padding: 0;
 }
 
 img {
@@ -52,6 +60,95 @@ a {
 
 a:hover {
     text-decoration: none !important;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: var(--header-height);
+    padding: 0.5rem 1rem;
+    background-color: #B8B6B6;
+    box-shadow: 0px 4px 8px 7px rgba(0,0,0,0.69);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    font-size: var(--font-size-h5);
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    margin-top: auto;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+}
+
+nav>ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+nav ul ul {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    gap: 1rem;
+}
+
+nav a:hover {
+    color: white;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+}
+
+
+.mobile {
+    display: none;
+}
+
+#hamburger--button {
+    background: none;
+    outline: 0;
+    border: 0;
+}
+
+#hamburger--button:hover {
+    cursor: pointer;
+}
+
+#logo--avatar:hover {
+    color: unset;
+}
+
+.logo, .account {
+    height: 100%;
+}
+
+.logo--avatar, .account--avatar {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 a.btn-primary {
@@ -74,86 +171,6 @@ a.btn:hover {
 .mdc-switch .mdc-switch__track, .mdc-switch .mdc-switch__handle::after {
     border: 1px solid black;
 }
-
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: var(--header-height);
-    padding: 0.5rem 1rem;
-    background-color: #B8B6B6;
-    box-shadow: 0px 4px 8px 7px rgba(0,0,0,0.69);
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    font-size: var(--font-size-h5);
-}
-
-footer {
-    margin-top: auto;
-}
-
-ul {
-    list-style-type: none;
-}
-
-nav {
-    width: 100%;
-    height: 100%;
-}
-
-nav img{
-    height: 100%;
-}
-
-nav ul {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
-    height: 100%;
-    width: 100%;
-    gap: 1rem;
-}
-
-nav a:hover {
-    color: white;
-}
-
-nav ul li {
-    display: flex;
-    align-items: center;
-}
-
-footer {
-    text-align: center;
-}
-
-
-.mobile {
-    display: none;
-}
-
-#hamburger--button {
-    background: none;
-    outline: 0;
-    border: 0;
-}
-
-#hamburger--button:hover {
-    cursor: pointer;
-}
-
-.logo--avatar, .account--avatar {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
 
 /* Less than or equal */
 @media (max-width: 599px) {
