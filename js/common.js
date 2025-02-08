@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     document.querySelector("header").innerHTML = `
-    <nav>
+        <nav>
             <ul>
                 <li id="menu--mobile" class="mobile">
                     <button id="hamburger--button">
@@ -46,12 +46,17 @@ document.addEventListener("DOMContentLoaded", function () {
                         <li id="logo--mobile" class="logo mobile">
                             <a class="logo--avatar" href="index.html"><img src="./public/images/favico.png" /></a>
                         </li>
+                        <li id="account" class="account">
+                            <a id="account--avatar" class="account--avatar" href="details.html">
+                                <img src="./public/images/favico.png" />
+                                <span> Super Admin </span>
+                            </a>
+                        </li>
                     </ul>
                 </li>
             </ul>        
         </nav>
     `;
-
     document.querySelector("footer").innerHTML = `
     <p>&#169; 2024 LHP High School for the Gifted. All rights reserved.</p>`;
 

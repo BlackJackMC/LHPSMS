@@ -232,7 +232,7 @@ footer {
         font-size: 2rem;
     }
 
-    .logo {
+    .logo, .account {
         display: none;
     }
 
