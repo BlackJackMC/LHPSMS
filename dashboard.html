@@ -13,18 +13,19 @@
     <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/dashboard.css">
+
     <title>LHPSMS</title>
 </head>
 
 <body>
     <header></header>
     <main>
-        <section class="Welcome-user">
-            <h2>Hello user</h2>
+        <section class="Welcome-box">
+            <h1>Hello user</h1>
             <p>Let's learn something new today</p>
         </section>
-        
-        <h3>Current classes</h3>
+
+        <h2>Current classes</h2>
         <section class="cur-classes">
             <div class="class-box" id="Basic">
                 <div class="class-img"></div>
@@ -85,6 +86,166 @@
                         <p>24</p>
                     </div> 
                 </div>
+            </div>
+        </section>
+
+        <br>
+
+        <section class="performance">
+            <div class="chart">
+                <h3 class="chart-title">Hours spend</h3>
+
+                <div class="legend-box">
+                    <div class="legend">
+                        <div class="legend-img" id="legend-study-img"></div>
+                        <p>Study</p>
+                    </div>
+
+                    <div class="legend">
+                        <div class="legend-img" id="legend-exam-img"></div>
+                        <p>Exams</p>
+                    </div>
+                </div>
+
+                <div class="graph">
+                    <div class="Y-value">
+                        <p>80 hr</p>
+                        <p>60 hr</p>
+                        <p>40 hr</p>
+                        <p>20 hr</p>
+                        <p>0 hr</p>
+                    </div>
+                    <div class="columns">
+                        <div class="column-container" id="mon-1">
+                            <div class="column-bar exam" style="flex-basis: 25%"></div>
+                            <div class="column-bar study" style="flex-basis: 75%"></div>
+                            <p>Jan</p>
+                        </div>
+            
+                        <div class="column-container" id="mon-2">
+                            <div class="column-bar exam" style="flex-basis: 16%"></div>
+                            <div class="column-bar study" style="flex-basis: 27%"></div>
+                            <p>Feb</p>
+                        </div>
+            
+                        <div class="column-container" id="mon-3">
+                            <div class="column-bar exam" style="flex-basis: 20%"></div>
+                            <div class="column-bar study" style="flex-basis: 10%"></div>
+                            <p>Mar</p>
+                        </div>
+            
+                        <div class="column-container" id="mon-4">
+                            <div class="column-bar exam" style="flex-basis: 40%"></div>
+                            <div class="column-bar study" style="flex-basis: 20%"></div>
+                            <p>Apr</p>
+                        </div>
+            
+                        <div class="column-container" id="mon-5">
+                            <div class="column-bar exam" style="flex-basis: 0%"></div>
+                            <div class="column-bar study" style="flex-basis: 0%"></div>
+                            <p>May</p>
+                        </div>
+            
+                        <div class="column-container" id="mon-6">
+                            <div class="column-bar exam" style="flex-basis: 0%"></div>
+                            <div class="column-bar study" style="flex-basis: 10%"></div>
+                            <p>Jun</p>
+                        </div>
+            
+                        <div class="column-container" id="mon-7">
+                            <div class="column-bar exam" style="flex-basis: 40%"></div>
+                            <div class="column-bar study" style="flex-basis: 50%"></div>
+                            <p>Jul</p>
+                        </div>
+            
+                        <div class="column-container" id="mon-8">
+                            <div class="column-bar exam" style="flex-basis: 30%"></div>
+                            <div class="column-bar study" style="flex-basis: 30%"></div>
+                            <p>Aug</p>
+                        </div>
+            
+                        <div class="column-container" id="mon-9">
+                            <div class="column-bar exam" style="flex-basis: 25%"></div>
+                            <div class="column-bar study" style="flex-basis: 0%"></div>
+                            <p>Sep</p>
+                        </div>
+            
+                        <div class="column-container" id="mon-10">
+                            <div class="column-bar exam" style="flex-basis: 7%"></div>
+                            <div class="column-bar study" style="flex-basis: 15%"></div>
+                            <p>Oct</p>
+                        </div>
+            
+                        <div class="column-container" id="mon-11">
+                            <div class="column-bar exam" style="flex-basis: 25%"></div>
+                            <div class="column-bar study" style="flex-basis: 20%"></div>
+                            <p>Nov</p>
+                        </div>
+            
+                        <div class="column-container" id="mon-12">
+                            <div class="column-bar exam" style="flex-basis: 25%"></div>
+                            <div class="column-bar study" style="flex-basis: 20%"></div>
+                            <p>Dec</p>
+                        </div>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="personal-info">
+                <div class="reminder">
+                    <div class="to-do-text">
+                        <h4>To-do</h4>
+                    </div>
+
+                    <div class="event-list">
+                        <div class="event" id="event-1">
+                            <div class="event-content">
+                                <p class="event-title">Practice test 6 Page 69</p>
+                                <p class="event-subject">English 101</p>
+                            </div>
+
+                            <div class="event-date-box">
+                                <p>DD/MM/YYYY</p>
+                            </div>
+                        </div>
+
+                        <div class="event" id="event-2">
+                            <div class="event-content">
+                                <p class="event-title">Listening test 5</p>
+                                <p class="event-subject">English 101</p>
+                            </div>
+
+                            <div class="event-date-box">
+                                <p>DD/MM/YYYY</p>
+                            </div>
+                        </div>
+
+                        <div class="event" id="event-3">
+                            <div class="event-content">
+                                <p class="event-title">Practice test 6 Page 69</p>
+                                <p class="event-subject">English 101</p>
+                            </div>
+
+                            <div class="event-date-box">
+                                <p>DD/MM/YYYY</p>
+                            </div>
+                        </div>
+
+                        <div class="expand-button">
+                            <a href="">See all tasks &rarr;</a>
+                        </div>
+                    </div>
+
+                    <br>
+                </div>
+
+                <div class="point">
+                    <h5>Point: <span>69.96</span></h5>
+                    <p>Your score have passed <span class="rank">69.96</span>% users</p>
+                </div>
+                
             </div>
         </section>
         
