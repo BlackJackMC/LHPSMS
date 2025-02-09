@@ -1,45 +1,37 @@
-h1, h2{
+#meet-our-team {
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    margin: 32px;
+    /* height: 100dvh; */
 }
-h1{
-    font-size: 80px;
-}
-h2{
-    font-size: 56px;
-}
-h3{
-    font-size: 38px;
-}
-h4{
-    font-size: 24px;
-}
+
 .team-container {
-    display: flex;
-    justify-content: center; 
-    flex-wrap: wrap;           
-    gap: 64px;  
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 4rem;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 80%;
 }
+
 .team-member {
-    display: flex;            
-    flex-direction: column;   
-    align-items: center; 
-    width: 200px;
-    padding: 16px; 
+    display: flex;
+    flex-direction: column; 
+    width: min-content;
+    padding: 1rem; 
     align-items: center;
     text-align: center;
     border: 1px solid black;
-    border-radius: 8%;
-    gap: 16px;
+    border-radius: 16px;
+    gap: 1rem;
 }
 .team-member > *{
     margin: 0px;
 } 
+
 .team-member img {
-    width: 190px;
-    height: 190px;
+    width: 12rem;
+    aspect-ratio: 1/1;
     object-fit: cover;
     border-radius: 50%;
 }
