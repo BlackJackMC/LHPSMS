@@ -140,6 +140,15 @@ nav ul li {
     color: unset;
 }
 
+#theme-switch .mdc-switch__icon {
+    font-size: 18px;
+    line-height: 18px;
+}
+
+#theme-switch .mdc-switch__icon--off {
+    color: white;
+}
+
 .logo, .account {
     height: 100%;
 }

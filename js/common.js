@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <li>
                     <ul>
                         <li id="theme">
-                            <button id="theme-switch" class="mdc-switch mdc-switch--unselected" type="button" role="switch" aria-checked="false">
+                            <button id="theme-switch" class="mdc-switch mdc-switch--selected" type="button" role="switch" aria-checked="true">
                                 <div class="mdc-switch__track"></div>
                                 <div class="mdc-switch__handle-track">
                                     <div class="mdc-switch__handle">
@@ -40,6 +40,14 @@ document.addEventListener("DOMContentLoaded", function () {
                                             <div class="mdc-elevation-overlay"></div>
                                         </div>
                                         <div class="mdc-switch__ripple"></div>
+                                        <div class="mdc-switch__icons">
+                                            <span class="mdc-switch__icon mdc-switch__icon--on material-symbols-outlined">
+                                                light_mode
+                                            </span>
+                                            <span class="mdc-switch__icon mdc-switch__icon--off material-symbols-outlined">
+                                                dark_mode
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
                             </button>
