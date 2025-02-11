@@ -114,13 +114,13 @@ form .input_box .password_title{
     text-align: center;
 }
 
-a {
+.login_form a {
     text-decoration: none;
     color: black;
     font-weight: 500;
 }
-a:hover {
-    text-decoration: underline;
+.login_form a:hover {
+    text-decoration: underline !important;
 }
 /* Login button styling */
 form button {
