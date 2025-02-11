@@ -13,13 +13,13 @@ document.addEventListener("DOMContentLoaded", function () {
                     <ul id="sitenav">
                         <li id="logo" class="logo">
                             <a id="logo--avatar" class="logo--avatar" href="index.html">
-                                <img src="./public/images/favico.png" />
+                                <img loading="lazy" src="./public/images/favico.png" />
                                 <span> LHPSMS </span>
                             </a>
                         </li>
                         <li id="account--mobile" class="account mobile">
                             <a id="account--mobile--avatar" class="account--avatar" href="details.html">
-                                <img src="./public/images/favico.png" />
+                                <img loading="lazy" src="./public/images/favico.png" />
                                 <span> Super Admin </span>
                             </a>
                         </li>
@@ -53,11 +53,11 @@ document.addEventListener("DOMContentLoaded", function () {
                             </button>
                         </li>
                         <li id="logo--mobile" class="logo mobile">
-                            <a class="logo--avatar" href="index.html"><img src="./public/images/favico.png" /></a>
+                            <a class="logo--avatar" href="index.html"><img loading="lazy" src="./public/images/favico.png" /></a>
                         </li>
                         <li id="account" class="account">
                             <a id="account--avatar" class="account--avatar" href="details.html">
-                                <img src="./public/images/favico.png" />
+                                <img loading="lazy" src="./public/images/favico.png" />
                                 <span> Super Admin </span>
                             </a>
                         </li>
