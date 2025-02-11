@@ -1,9 +1,6 @@
-.Welcome-box h1 {
-    margin: 0px;
-}
 .cur-classes {
     width: 100%;
-    height: 15rem;
+    height: 20rem;
     display: flex;
     flex-wrap: nowrap;
     justify-content: center; 
@@ -12,23 +9,24 @@
 }
 
 .class-box {
-    width: 350px;
+    width: 28rem;
     height: 100%;
-    border-radius: 20px;
+    border-radius: 5%;
 
     display: flex;
     align-items: center;
     text-align: center;
     flex-direction: column;
+    justify-content: center;
+
+    gap: 1rem;
 }
 
 .class-img {
-    height: 70px;
-    width: 70px;
+    height: 6.5rem;
+    width: 6.5rem;
     border-radius: 100%;
     background-color: aqua;
-
-    margin: 30px;
 }
 
 .class-title {
@@ -43,12 +41,9 @@
     flex-direction: row;
 
     width: 70%;
-    height: 50px;
-    background-color: red;
+    height: 4rem;
 
     justify-content: space-around;
-
-    margin: 10px;
 }
 
 .icon {
@@ -64,18 +59,14 @@
     align-items: center;
 }
 
-.icon p {
-    margin: 5px;
-}
-
 #icon-book-img {
     background-image: url("../public/images/book-icon.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 
-    height: 30px;
-    width: 30px;
+    height: 1.5rem;
+    width: 1.5rem;
 }   
 
 #icon-human-img {
@@ -84,8 +75,8 @@
     background-size: cover;
     background-position: center;
 
-    height: 30px;
-    width: 30px;
+    height: 1.5rem;
+    width: 1.5rem;
 }  
 
 #icon-assignment-img {
@@ -94,8 +85,8 @@
     background-size: cover;
     background-position: center;
 
-    height: 30px;
-    width: 30px;
+    height: 1.5rem;
+    width: 1.5rem;
 }  
 
 #Basic {
@@ -112,7 +103,7 @@
 
 .performance {
     width: 100%;
-    height: 400px;
+    height: 40rem;
 
     display: flex;
     justify-content: center; 
@@ -121,27 +112,30 @@
 }
 
 .chart {
-    width: 720px;
-    border-radius: 20px;
+    width: 56rem;
+    border-radius: 5%;
 
     display: flex;
 
     align-items: center;
     text-align: center;
     flex-direction: column;
+    justify-content: center;
 
     border: 2px solid black;
+
+    gap: 1rem;
 }
 
 .chart-title {
-    margin: 10px;
+    margin: 0px;
 }
 
 .legend-box {
     display: flex;
     flex-direction: row;
 
-    gap: 20px;
+    gap: 4rem;
 }
 
 .legend {
@@ -152,13 +146,13 @@
 }
 
 .legend p {
-    margin: 10px;
+    margin: 0.5rem;
 }
 
 .legend-img {
     border-radius: 100%;
-    height: 30px;
-    width: 30px;
+    height: 2.5rem;
+    width: 2.5rem;
 }
 
 #legend-study-img {
@@ -174,6 +168,7 @@
     flex-direction: row;
     align-items: center;
     text-align: center;
+    gap: 1rem;
 }
 
 .Y-value {
@@ -182,8 +177,8 @@
     flex-direction: column;
     text-align: center;
     white-space: nowrap;
-    gap: 25px;
-    margin: 10px;
+    
+    gap: 4.7rem;  
 }
 
 .Y-value p{
@@ -193,10 +188,10 @@
 .columns {
     margin: 10px;
     display: flex;
-    height: 230px;
     align-items: stretch;
-    width: 500px;
-    gap: 5px;
+    height: 26.75rem;
+    width: 39.5rem;
+    gap: 0.5rem;
 }
 
 .columns p {
@@ -221,7 +216,7 @@
 }
 
 .personal-info {
-    width: 340px;
+    width: 28.6rem;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -232,15 +227,17 @@
 
 .reminder {
     width: 100%;
-    height: 330px;
+    height: 27rem;
 
-    border-radius: 20px;
+    border-radius: 5%;
     border: 2px solid black;
 
     display: flex;
     align-items: center;
     text-align: center;
     flex-direction: column;
+
+    justify-content: center;
 
 }
 
@@ -262,7 +259,7 @@
     flex-direction: column;
 
     width: 100%;
-    height: 100%;
+    height: 70%;
 
     /* background-color: aqua; */
     gap: 0.5rem;
@@ -273,7 +270,7 @@
     flex-direction: row;
     align-items: center;
     width: 80%;
-    height: 60px;
+    height: 30%;
 
     /* border: 2px solid black; */
 
@@ -281,9 +278,12 @@
 }
 
 .event p {
-    margin: 5px;
+    margin: 0.5rem;
 }
 
+.event h5 {
+    margin: 0.5rem;
+}
 .event-content {
     width: 60%;
     height: 100%;
@@ -325,7 +325,7 @@
 
 .expand-button {
     background-color: black;
-    border-radius: 5px;
+    border-radius: 10%;
 
     height: 2rem;
     width: 7rem;
@@ -341,7 +341,7 @@
 
 .point {
     width: 100%;
-    height: 60px;
+    height: 12rem;
 
     border: 2px solid black;
     border-radius: 20px;
@@ -351,10 +351,10 @@
     text-align: center;
 }
 
-.point h5 {
+.point h2 {
     margin: 0;
 }
 
-.point p {
+.point h5 {
     margin: 0;
 }
