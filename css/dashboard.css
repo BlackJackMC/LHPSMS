@@ -363,9 +363,27 @@ tr.header th {
     }
 } 
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
     .cur-classes {
         display: flex;
         flex-direction: column;
     }
-} 
+}
+
+@media (min-width: 375px) {
+    .month-text-2 {
+        display: none;
+    }
+}
+
+@media (max-width: 375px) {
+    .month-text {
+        display: none;
+    }
+    .legend-box {
+        gap: 1rem;
+    }
+    .month-text-2 {
+        display: block;
+    }
+}
