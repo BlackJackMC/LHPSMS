@@ -35,3 +35,9 @@
     object-fit: cover;
     border-radius: 50%;
 }
+.team-member p{
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Show up to 3 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
