@@ -67,7 +67,31 @@ document.addEventListener("DOMContentLoaded", function () {
         </nav>
     `;
     document.querySelector("footer").innerHTML = `
-    <p>&#169; 2024 LHP High School for the Gifted. All rights reserved.</p>`;
+    <section id="info">
+        <section id="contacts">
+            <h4>Contact</h4>
+            <p> Telephone: (+84 - 28) 38398506 </p>
+            <p> Address: 235 Nguyễn Văn Cừ, phường 4, quận 5, TP. Hồ Chí Minh. </p>
+        </section>
+        <section id="sitemap">
+            <h4>Sitemap</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+            </ul>
+        </section>
+        <section id="social">
+            <h4>Connect with us</h4>
+            <ul>
+                <li><a href="https://www.facebook.com/LHPHCMC" target="_blank"><span><i class="fa-brands fa-facebook"></i> Facebook</span></a></li>
+                <li><a href="lehongphong.edu.vn" target="_blank"><span><i class="fa-solid fa-globe"></i> Official website</span></a></li>
+            </ul>
+        </section>
+    </section>
+    <section id="copyright">
+        <p>&#169; 2024 LHP High School for the Gifted. All rights reserved.</p>
+    </section>`;
 
     document.querySelectorAll(".mdc-switch").forEach(switchElement => {
         mdc.switchControl.MDCSwitch.attachTo(switchElement);

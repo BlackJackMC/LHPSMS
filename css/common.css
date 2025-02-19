@@ -85,7 +85,10 @@ main {
 
 footer {
     margin-top: auto;
-    text-align: center;
+}
+
+footer h4 {
+    margin-bottom: 0.5rem;
 }
 
 ul {
@@ -147,6 +150,28 @@ nav ul li {
 
 #theme-switch .mdc-switch__icon--off {
     color: white;
+}
+
+#info {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2;
+    padding-inline: 4rem;
+}
+
+#contacts {
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+#social ul li a span {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+#copyright {
+    text-align: center;
+    border-top: 1px solid black;
 }
 
 .logo, .account {
