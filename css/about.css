@@ -24,14 +24,17 @@
     border: 1px solid black;
     border-radius: 16px;
     gap: 1rem;
+    width: 100%;
+    align-items: stretch;
 }
 .team-member > *{
     margin: 0px;
 } 
 
 .team-member img {
-    width: 12rem;
-    aspect-ratio: 1/1;
+    width: 100%;
+    aspect-ratio: 1;
+    height: auto;
     object-fit: cover;
     border-radius: 50%;
 }
@@ -40,4 +43,8 @@
     -webkit-line-clamp: 3; /* Show up to 3 lines */
     -webkit-box-orient: vertical;
     overflow: hidden;
+}
+.info{
+    flex: 1;
+    min-height: 8rem;
 }
