@@ -81,9 +81,11 @@ header {
 
 main {
     flex: 1;
+    margin-bottom: 2rem;
 }
 
 footer {
+    border-top: 1px solid black;
     margin-top: auto;
 }
 
@@ -171,7 +173,7 @@ nav ul li {
 
 #copyright {
     text-align: center;
-    border-top: 1px solid black;
+    border-top: 1px solid lightgray;
 }
 
 .logo, .account {
