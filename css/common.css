@@ -296,6 +296,12 @@ a.btn:hover {
     #theme {
         display: none;
     }
+    #info{
+        grid-template-columns: 1fr;
+    }
+    #contacts{
+        grid-area: 1 / 1 / 1 / 1;
+    }
 }
 @media (max-width: 839px) {}
 @media (max-width: 1279px) {}
